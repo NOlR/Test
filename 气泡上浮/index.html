@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body,html{
+				width: 100%;
+				height: 100%;
+			}
+			body{
+				margin: 0;
+				padding: 0;
+				background-color:#8e44ad;
+			}
+			.wrapper{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: 0;
+				overflow: hidden;
+				top: 0;
+				left: 0;
+			}
+			.bubble{
+				position: absolute;
+				bottom: 0;
+				background-color: #f1f1f1;
+				border-radius: 50%;
+				opacity: 0.5;
+				animation: flying 10s infinite ease-in;
+			}
+			.bubble:nth-last-of-type(1){
+				width: 40px;
+				height: 40px;
+				left: 10%;
+				animation-duration: 8s;
+			}
+			.bubble:nth-last-of-type(2){
+				width: 20px;
+				height: 20px;
+				left: 20%;
+				animation-duration: 8s;
+				/* animation-delay: 1s; */
+			}
+			.bubble:nth-last-of-type(3){
+				width: 30px;
+				height: 30px;
+				left: 25%;
+				animation-duration: 5s;
+				/* animation-delay: 2s; */
+			}
+			.bubble:nth-last-of-type(4){
+				width: 80px;
+				height: 80px;
+				left: 40%;
+				animation-duration: 12s;
+				/* animation-delay: 3s; */
+			}
+			.bubble:nth-last-of-type(5){
+				width: 15px;
+				height: 15px;
+				left: 50%;
+				animation-duration: 5s;
+				/* animation-delay: 2s; */
+			}
+			.bubble:nth-last-of-type(6){
+				width: 35px;
+				height: 35px;
+				left: 55%;
+				animation-duration: 7s;
+				/* animation-delay: 3s; */
+			}
+			.bubble:nth-last-of-type(7){
+				width: 30px;
+				height: 30px;
+				left: 60%;
+				animation-duration: 9s;
+				/* animation-delay: 4s; */
+			}
+			.bubble:nth-last-of-type(8){
+				width: 50px;
+				height: 50px;
+				left: 75%;
+				animation-duration: 16s;
+				/* animation-delay: 6s; */
+			}
+			.bubble:nth-last-of-type(9){
+				width: 20px;
+				height: 20px;
+				left: 85%;
+				animation-duration: 7s;
+				/* animation-delay: 3s; */
+			}
+			.bubble:nth-last-of-type(10){
+				width: 30px;
+				height: 30px;
+				left: 90%;
+				animation-duration: 6s;
+				/* animation-delay: 3s; */
+			}
+			@keyframes flying{
+				0%{
+					bottom: -100px;
+					transform: translate(0);
+				}
+				50%{
+					transform: translate(100px);
+				}
+				100%{
+					bottom: 1080px;
+					transform: translate(-200px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="bubble"></div>
+			<div class="bubble"></div>
+			<div class="bubble"></div>
+			<div class="bubble"></div>
+			<div class="bubble"></div>
+			<div class="bubble"></div>
+			<div class="bubble"></div>
+			<div class="bubble"></div>
+			<div class="bubble"></div>
+			<div class="bubble"></div>
+		</div>
+	</body>
+</html>

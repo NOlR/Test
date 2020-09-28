@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>图标悬浮动态效果</title>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1849451_zuuv9l4x5po.css"></link>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-decoration: none;
+			}
+			body{
+				background-color: #74b9ff;
+			
+			}
+			.wapper{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+			.wapper a{
+				display: inline-flex;
+				width: 40px;
+				height: 40px;
+				background-color: #2d3436;
+				color:white;
+				margin: 0 6px;
+				border-radius: 50%;
+				justify-content: center;
+				align-items: center;
+				transition: 0.4s;
+			}
+			.wapper a i{
+				font-size: 26px;	
+				transition: 0.4s all;
+			}
+			.wapper a:hover{
+				background-color: #ff6348;
+			}
+			.wapper a:hover>i{
+				transform: scale(1.6) rotate(25deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wapper">
+			<a href="#"><i class="iconfont icon-facebook"></i></a>
+			<a href="#"><i class="iconfont icon-guge"></i></a>
+			<a href="#"><i class="iconfont icon-youtube"></i></a>
+			<a href="#"><i class="iconfont icon-instagram"></i></a>
+			<a href="#"><i class="iconfont icon-tuitetwitter43"></i></a>
+		</div>
+	</body>
+</html>
